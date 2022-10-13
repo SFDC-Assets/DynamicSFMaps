@@ -17,9 +17,15 @@ This component was originally designed for the Organization Clothing and Individ
 
 The Apex mapping function is then embedded into a flow button that can be placed directly on the record page that you will call the action from, and then utilizes the <a href="https://unofficialsf.com/new-ways-to-open-web-pages-from-flow/">UnofficialSF OpenURL flow component</a> to open the layer in Salesforce Maps.
 
-## Additional Setup Instructions
+## Setup Instructions
 
-Provide additional steps to setup the package, such as assigning permission sets or loading sample data. 
+This component relies on the specifically data model being used by the Salesforce org, and thus some minor configuration changes will be required in order to get this component working in your org.  First, ensure that the object you want to map (in this case inventory__c) is already defined in Salesforce Maps with a base object and both lat and long fields to store the geolocation.
+
+Next we want to determine what types of records we are looking for (line 12 of the apex class).  In our case, we queried an object called sales_order__c and selected each of the sale order line items and stored them in a separate list.
+
+```json
+List<PBSI__PBSI_Sales_Order_Line__c> salesorderlinelist = [SELECT Id, PBSI__Item__c,PBSI__Item__r.Name, PBSI__Quantity_Needed__c FROM PBSI__PBSI_Sales_Order_Line__c where PBSI__Sales_Order__c =: currentId];
+```json
 
 ## Demo Script
 
