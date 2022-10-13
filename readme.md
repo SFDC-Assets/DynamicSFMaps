@@ -27,19 +27,7 @@ Provide steps or general story for showcasing the package contents.
 
 A list of updates made over time after initial release. 
 
-## Maintainers
-[Jonathan Zhou/zhou059](https://github.com/zhou059)
+## Maintainer
 
-[Ankit Sanghvi/ankit-sanghvi](https://github.com/ankit-sanghvi)
+Jack Galletta, Public Sector Solution Engineer
 
-## References
-* [Quip Documentation Link](https://quip.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Choose an Open Source License](https://choosealicense.com)
-* [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-* [RecordIt GIF Creator](https://recordit.co/)
-* [Badges Reference](https://github.com/badges/shields/blob/master/README.md)
-* [![Deploy to Heroku](img)](something)
-* [![Deploy to SFDX](https://deploy-to-sfdx.com/dist/assets/images/DeployToSFDX.svg)](https://deploy-to-sfdx.com?template=https://github.com/SE-Assets/Project-Template/)
-* [List of tags to use for repositories](https://salesforce.quip.com/zIyyAzGYRaWu)
-* [Email template to get approval for making repo public](https://salesforce.quip.com/8j1jAKTHlk6Q)
