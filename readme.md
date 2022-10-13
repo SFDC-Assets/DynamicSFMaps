@@ -60,11 +60,9 @@ The only thing to note here is to ensure that you are passing the output paramet
 
 ![open url](images/open_url.png)
 
-## Release History
-
-A list of updates made over time after initial release. 
 
 ## Maintainer
 
 Jack Galletta, Public Sector Solution Engineer
 
+Please feel free to Slack me with any questions about setup, configuration, or general improvements to the project.
