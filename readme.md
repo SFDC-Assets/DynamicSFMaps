@@ -19,7 +19,7 @@ The Apex mapping function is then embedded into a flow button that can be placed
 
 ## Setup Instructions
 
-This component relies greatly on the specific data model being used by the Salesforce org, and thus some minor code changes will be required in order to get this component working in your org.  
+Since this component relies heavily on the specific data model being used by the Salesforce org, some modification to the SOQL queries will be required in order to get this component working in your org.
 
 First, ensure that the object you want to map (in this case inventory__c) is already defined in Salesforce Maps with a base object and both lat and long fields to store the geolocation.  This ensures that our inventory warehouse records can actually be read and mapped by the SF Maps application.
 
