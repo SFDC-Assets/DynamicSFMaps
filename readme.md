@@ -33,7 +33,7 @@ Now that we have our line items, we can run another query to select all of the l
 
 ```
 List<List<PBSI__PBSI_Inventory__c>> ilist = new List<List<PBSI__PBSI_Inventory__c>>();
-                        //iterate through salesorderlinelist
+            //iterate through salesorderlinelist
             for(PBSI__PBSI_Sales_Order_Line__c salesorderline:salesorderlinelist){
             	List<PBSI__PBSI_Inventory__c> myilist = [SELECT PBSI__qty__c, PBSI__location_lookup__c, PBSI__location_lookup__r.Name FROM PBSI__PBSI_Inventory__c WHERE PBSI__item_lookup__c =: salesorderline.PBSI__Item__c AND PBSI__qty__c > 0];
             	ilist.add(myilist);
