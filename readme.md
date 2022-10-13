@@ -9,6 +9,10 @@
 
 ---
 
+## Summary
+
+This component was originally designed for the Organization Clothing and Individual Equipment (OCIE) program for the U.S. Army.  The goal of this component was to render all of the warehouse locations that contained the requested order line items onto a dynamically created Salesforce Maps layer.  From the simple push of a button on the order form, users would be automatically redirected to a view of Salesforce Maps that displays all of the locations that contained the requested items.
+
 ## Additional Setup Instructions
 
 Provide additional steps to setup the package, such as assigning permission sets or loading sample data. 
