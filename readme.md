@@ -1,4 +1,4 @@
-
+![BSD 3-Clause License](https://img.shields.io/badge/license-BSD%203--Clause-success)
 ![Status](https://img.shields.io/badge/status-Complete-green)
 ![Geography](https://img.shields.io/badge/Geography-US-blue)
 
