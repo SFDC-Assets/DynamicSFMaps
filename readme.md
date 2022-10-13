@@ -25,7 +25,7 @@ Next we want to determine what types of records we are looking for (line 12 of t
 
 ```json
 List<PBSI__PBSI_Sales_Order_Line__c> salesorderlinelist = [SELECT Id, PBSI__Item__c,PBSI__Item__r.Name, PBSI__Quantity_Needed__c FROM PBSI__PBSI_Sales_Order_Line__c where PBSI__Sales_Order__c =: currentId];
-```json
+```
 
 ## Demo Script
 
