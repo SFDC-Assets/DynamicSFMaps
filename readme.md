@@ -17,7 +17,7 @@ This component was originally designed for the Organization Clothing and Individ
 
 The Apex mapping function is then embedded into a flow button that can be placed directly on the record page that you will call the action from, and then utilizes the <a href="https://unofficialsf.com/new-ways-to-open-web-pages-from-flow/">UnofficialSF OpenURL flow component</a> to open the layer in Salesforce Maps.
 
-## Setup Instructions
+## Code Setup Instructions
 
 Since this component relies heavily on the specific data model being used by the Salesforce org, some modification to the SOQL queries will be required in order to get this component working in your org.
 
@@ -38,6 +38,12 @@ List<List<PBSI__PBSI_Inventory__c>> ilist = new List<List<PBSI__PBSI_Inventory__
             	List<PBSI__PBSI_Inventory__c> myilist = [SELECT PBSI__qty__c, PBSI__location_lookup__c, PBSI__location_lookup__r.Name FROM PBSI__PBSI_Inventory__c WHERE PBSI__item_lookup__c =: salesorderline.PBSI__Item__c AND PBSI__qty__c > 0];
             	ilist.add(myilist);
             }
+```
+
+The rest of the code is essentially grabbing the base URL of the org, appending all of the records, and then defining other parameters like tooltips, the marker color, and the zoom level of the map when it loads (Line 45). Again, for more clarification on the syntax of building a Mapping URL, please see <a href="https://help.salesforce.com/s/articleView?id=000354507&type=1">this Salesforce Maps documentation</a>.
+
+```
+baseURL = baseURL+'&baseObjectId=a2E8Z0000077EolUAE&tooltipField=PBSI__location_lookup__r.Name&tooltipField2=PBSI__item_lookup__c&tooltipField3=PBSI__Description__c&tooltipField4=PBSI__qty__c&zoom=8&color='+color;
 ```
 
 ## Demo Script
