@@ -15,6 +15,8 @@ This component was originally designed for the Organization Clothing and Individ
 
 ![Map View](images/map_view.png)
 
+The Apex mapping function is then embedded into a flow button that can be placed directly on the record page that you will call the action from, and then utilizes the <a href="https://unofficialsf.com/new-ways-to-open-web-pages-from-flow/">UnofficialSF OpenURL flow component</a> to open the layer in Salesforce Maps.
+
 ## Additional Setup Instructions
 
 Provide additional steps to setup the package, such as assigning permission sets or loading sample data. 
