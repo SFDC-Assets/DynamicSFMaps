@@ -25,7 +25,7 @@ First, ensure that the object you want to map (in this case inventory__c) is alr
 
 Next we want to determine what types of records we are looking for (line 12 of the apex class).  In our case, we queried an object called sales_order__c and selected each of the sale order line items and stored them in a separate list.
 
-```json
+```
 List<PBSI__PBSI_Sales_Order_Line__c> salesorderlinelist = [SELECT Id, PBSI__Item__c,PBSI__Item__r.Name, PBSI__Quantity_Needed__c FROM PBSI__PBSI_Sales_Order_Line__c where PBSI__Sales_Order__c =: currentId];
 ```
 
