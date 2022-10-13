@@ -4,8 +4,8 @@ Choose one: ![Status](https://img.shields.io/badge/status-In%20Development-yello
 ![Status](https://img.shields.io/badge/status-Archived-red) / 
 ![Geography](https://img.shields.io/badge/Geography-US-blue)
 
-<h1 align="center">TITLE PLACEHOLDER</h1>
-<p align="center">DESCRIPTION PLACEHOLDER</p>
+<h1 align="center">Dynamic SF Maps</h1>
+<p align="center">This package contains apex classes to dynamically render the locations of different objects returned by a SOQL query into Salesforce Maps.</p>
 
 <!-- Sections below are Optional -->
 
