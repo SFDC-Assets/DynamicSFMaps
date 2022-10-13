@@ -28,6 +28,7 @@ global with sharing class GetInventoryItems {
 
             //append all of the records to the baseURL
             for(List<PBSI__PBSI_Inventory__c> l :ilist){
+            //nested loop iterates through each of the inventory locations for each sales order line item
             for(PBSI__PBSI_Inventory__c p : l){
                 system.debug(p.Id);
                 baseURL = baseURL+String.valueof(p.Id)+',';
