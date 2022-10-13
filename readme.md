@@ -46,9 +46,19 @@ The rest of the code is essentially grabbing the base URL of the org, appending 
 baseURL = baseURL+'&baseObjectId=a2E8Z0000077EolUAE&tooltipField=PBSI__location_lookup__r.Name&tooltipField2=PBSI__item_lookup__c&tooltipField3=PBSI__Description__c&tooltipField4=PBSI__qty__c&zoom=8&color='+color;
 ```
 
-## Demo Script
+Now that our URL is built and returned at the end of the code, we can configure a basic flow to call our class and open the URL.
 
-Provide steps or general story for showcasing the package contents.
+## Flow Setup
+
+The flow used here is super basic and consists of only 3 basic steps: rendering a button, calling our apex class, and then opening the URL with the <a href="https://unofficialsf.com/new-ways-to-open-web-pages-from-flow/">UnofficialSF OpenURL action</a>.
+
+![flow overview](images/flow_overview.png)
+
+The only thing to note here is to ensure that you are passing the output parameters correctly to the openURL function like so:
+
+![apex action](images/apex_action.png)
+
+![open url](images/open_url.png)
 
 ## Release History
 
