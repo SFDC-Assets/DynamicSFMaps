@@ -29,7 +29,7 @@ Next we want to determine what types of records we are looking for (line 12 of t
 List<PBSI__PBSI_Sales_Order_Line__c> salesorderlinelist = [SELECT Id, PBSI__Item__c,PBSI__Item__r.Name, PBSI__Quantity_Needed__c FROM PBSI__PBSI_Sales_Order_Line__c where PBSI__Sales_Order__c =: currentId];
 ```
 
-Now that we have our line items, we can run another query to select all of the locations that have those items in stock.
+Now that we have our line items, we can run another query to select all of the locations that have those items in stock (lines 16-21).  In our example, we iterate through all of the sales order lines, select the Inventory__c records where that item is in stock, and then add them to another list.
 
 ```
 List<List<PBSI__PBSI_Inventory__c>> ilist = new List<List<PBSI__PBSI_Inventory__c>>();
