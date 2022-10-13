@@ -3,7 +3,7 @@
 ![Geography](https://img.shields.io/badge/Geography-US-blue)
 
 <h1 align="center">Dynamic SF Maps</h1>
-<p align="center">This package contains apex classes to dynamically render the locations of different records returned by a SOQL query into Salesforce Maps.  The premise of this component is based off of <a href="https://help.salesforce.com/s/articleView?id=000354507&type=1">this Salesforce Maps documentation</a> which details how to pass records into a custom URL that will render your records in a custom layer on the Map. </p>
+<p align="center">This package contains apex classes to dynamically render the locations of different records returned by a SOQL query into Salesforce Maps.  The premise of this component is based off of <a href="https://help.salesforce.com/s/articleView?id=000354507&type=1">this Salesforce Maps documentation</a> which details how to pass records into a custom URL that will render a list of records in a custom layer on the Map. </p>
 
 <!-- Sections below are Optional -->
 
