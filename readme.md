@@ -19,7 +19,9 @@ The Apex mapping function is then embedded into a flow button that can be placed
 
 ## Setup Instructions
 
-This component relies on the specifically data model being used by the Salesforce org, and thus some minor configuration changes will be required in order to get this component working in your org.  First, ensure that the object you want to map (in this case inventory__c) is already defined in Salesforce Maps with a base object and both lat and long fields to store the geolocation.
+This component relies greatly on the specific data model being used by the Salesforce org, and thus some minor code changes will be required in order to get this component working in your org.  
+
+First, ensure that the object you want to map (in this case inventory__c) is already defined in Salesforce Maps with a base object and both lat and long fields to store the geolocation.  This ensures that our inventory warehouse records can actually be read and mapped by the SF Maps application.
 
 Next we want to determine what types of records we are looking for (line 12 of the apex class).  In our case, we queried an object called sales_order__c and selected each of the sale order line items and stored them in a separate list.
 
