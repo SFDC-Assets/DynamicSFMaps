@@ -23,10 +23,21 @@ This component relies greatly on the specific data model being used by the Sales
 
 First, ensure that the object you want to map (in this case inventory__c) is already defined in Salesforce Maps with a base object and both lat and long fields to store the geolocation.  This ensures that our inventory warehouse records can actually be read and mapped by the SF Maps application.
 
-Next we want to determine what types of records we are looking for (line 12 of the apex class).  In our case, we queried an object called sales_order__c and selected each of the sale order line items and stored them in a separate list.
+Next we want to determine what types of records we are looking for (line 12 of the apex class).  In this case, we queried each of the order line items off of the current sales order and stored them in a separate list.
 
 ```
 List<PBSI__PBSI_Sales_Order_Line__c> salesorderlinelist = [SELECT Id, PBSI__Item__c,PBSI__Item__r.Name, PBSI__Quantity_Needed__c FROM PBSI__PBSI_Sales_Order_Line__c where PBSI__Sales_Order__c =: currentId];
+```
+
+Now that we have our line items, we can run another query to select all of the locations that have those items in stock.
+
+```
+List<List<PBSI__PBSI_Inventory__c>> ilist = new List<List<PBSI__PBSI_Inventory__c>>();
+                        //iterate through salesorderlinelist
+            for(PBSI__PBSI_Sales_Order_Line__c salesorderline:salesorderlinelist){
+            	List<PBSI__PBSI_Inventory__c> myilist = [SELECT PBSI__qty__c, PBSI__location_lookup__c, PBSI__location_lookup__r.Name FROM PBSI__PBSI_Inventory__c WHERE PBSI__item_lookup__c =: salesorderline.PBSI__Item__c AND PBSI__qty__c > 0];
+            	ilist.add(myilist);
+            }
 ```
 
 ## Demo Script
