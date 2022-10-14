@@ -63,6 +63,11 @@ The only thing to note here is to ensure that you are passing the output paramet
 
 ## Maintainer
 
+<a href="https://githubsfdeploy.herokuapp.com">
+  <img alt="Deploy to Salesforce"
+       src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png">
+</a>
+
 Jack Galletta, Public Sector Solution Engineer
 
 Please feel free to Slack me with any questions about setup, configuration, or general improvements to the project.
