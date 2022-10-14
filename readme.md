@@ -60,13 +60,14 @@ The only thing to note here is to ensure that you are passing the output paramet
 
 ![open url](images/open_url.png)
 
-
-## Maintainer
+## Deploy this package
 
 <a href="https://githubsfdeploy.herokuapp.com">
   <img alt="Deploy to Salesforce"
        src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png">
 </a>
+
+## Maintainer
 
 Jack Galletta, Public Sector Solution Engineer
 
